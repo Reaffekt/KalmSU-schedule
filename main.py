@@ -11,7 +11,7 @@ dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def start(message: Message):
-    web_app_button = KeyboardButton(text="Открыть мини-приложение", web_app=WebAppInfo(url="https://your-web-app-url.com"))
+    web_app_button = KeyboardButton(text="Открыть мини-приложение", web_app=WebAppInfo(url="https://reaffekt.github.io/KalmSU-schedule/"))
 
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True).add(web_app_button)
 
